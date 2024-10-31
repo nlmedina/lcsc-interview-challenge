@@ -1,0 +1,17 @@
+{
+  "name": "data",
+  "type": "module",
+  "version": "1.0.0",
+  "main": "fetch.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "jsdom": "^25.0.1",
+    "lodash": "^4.17.21",
+    "puppeteer": "^23.6.1"
+  }
+}
