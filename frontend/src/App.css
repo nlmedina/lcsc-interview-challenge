@@ -1,0 +1,21 @@
+.movie-thumbnail:hover {
+    transform: scale(1.5, 1.5);
+}
+
+.movie-thumbnail {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    transition: transform 0.5s;
+    background-color: black;
+    border-radius: 0.25rem;
+}
+
+.movie-thumbnail > img {
+    border-radius: 0.25rem 0.25rem 0 0;
+}
+
+/* .movie-thumbnail > div {
+    padding: 0.5rem;
+} */
