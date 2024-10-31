@@ -1,18 +1,15 @@
 import "./App.css";
 import movies from "../../data/movies.json";
+import MovieThumbnail from "./MovieThumbnail";
+import Movie from "./types/Movie";
 
 function App() {
   return (
     <>
       <h1>Langara TV+++</h1>
       <div className="grid">
-        {movies.map((movie) => {
-          return (
-            <div key={movie.imdbID} className="cell movie-thumbnail">
-              <img src={movie.Poster} alt={`${movie.Title} Poster`} />
-              {/* <div>{movie.Title}</div> */}
-            </div>
-          );
+        {movies.map((movie: Movie) => {
+          return <MovieThumbnail key={movie.imdbID} movie={movie} />;
         })}
       </div>
     </>
