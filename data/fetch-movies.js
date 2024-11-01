@@ -95,6 +95,6 @@ for (let jobs of batchedJobs) {
 }
 
 console.log("Done fetching movie metadata, writing to reference file...");
-const path = "./movies.json";
+const path = "../frontend/movies.json";
 fs.writeFileSync(path, JSON.stringify(movieDetails, null, 2), "utf8");
 console.log("Done fetching movies.");

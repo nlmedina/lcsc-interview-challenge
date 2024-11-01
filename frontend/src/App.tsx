@@ -1,5 +1,5 @@
 import "./App.css";
-import movies from "../../data/movies.json";
+import movies from "../movies.json";
 import MovieThumbnail from "./MovieThumbnail";
 import Movie from "./types/Movie";
 
