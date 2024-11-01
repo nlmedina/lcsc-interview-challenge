@@ -2,9 +2,24 @@ import React from "react";
 
 import Movie from "../types/Movie";
 
-export const MovieThumbnail: React.FC<{ movie: Movie }> = ({ movie }) => {
+interface MovieThumbnailProps {
+  movie: Movie;
+  onClick: (m: Movie) => void;
+}
+
+export const MovieThumbnail: React.FC<MovieThumbnailProps> = ({
+  movie,
+  onClick,
+}) => {
   return (
-    <div className="cell movie-thumbnail">
+    <div
+      className="movie-thumbnail"
+      role="button"
+      onClick={() => {
+        console.log("Reached!");
+        onClick(movie);
+      }}
+    >
       <img src={movie.Poster} alt={`${movie.Title} Poster`} />
     </div>
   );
